@@ -44,7 +44,7 @@ export default function Home() {
 
         <div className={styles.center}>
           <Image
-            className={styles.logo}
+            className={"relative invert"}
             src="/next.svg"
             alt="Next.js Logo"
             width={180}
@@ -53,59 +53,67 @@ export default function Home() {
           />
         </div>
 
-        <div className={styles.grid}>
+        <div className={"grid grid-cols-4 w-screen max-w-full"}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            className={"group px-4 py-5 border border-white/0 bg-gray-500/0 rounded-xl transition-all ease-in-out hover:border-white/20 hover:bg-gray-500/10 duration-200"}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+            <h2 className="font-semibold	mb-3 ">
+              Docs <span
+              className="inline-block group-hover:translate-x-1 transition-transform"
+              >-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className="m-0 opacity-60 text-sm">
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </a>
 
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            className={"group px-4 py-5 border border-white/0 bg-gray-500/0 rounded-xl transition-all ease-in-out hover:border-white/20 hover:bg-gray-500/10 duration-200"}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+            <h2 className="font-semibold	mb-3">
+              Learn <span
+              className="inline-block group-hover:translate-x-1 transition-transform"
+              >-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className="m-0 opacity-60 text-sm">
               Learn about Next.js in an interactive course with&nbsp;quizzes!
             </p>
           </a>
 
           <a
             href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            className={"px-4 py-5 border border-white/0 bg-gray-500/0 rounded-xl transition-all ease-in-out hover:border-white/20 hover:bg-gray-500/10 duration-200 group "}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
+            <h2 className="font-semibold	mb-3">
+              Templates <span
+              className="inline-block group-hover:translate-x-1 transition-transform"
+              >-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className="m-0 opacity-60 text-sm">
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
           </a>
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            className={"group px-4 py-5 border border-white/0 bg-gray-500/0 rounded-xl transition-all ease-in-out hover:border-white/20 hover:bg-gray-500/10 duration-200"}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
+            <h2 className="font-semibold	mb-3">
+              Deploy <span
+              className="inline-block group-hover:translate-x-1 transition-transform"
+              >-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className="m-0 opacity-60 text-sm">
               Instantly deploy your Next.js site to a shareable URL
               with&nbsp;Vercel.
             </p>
