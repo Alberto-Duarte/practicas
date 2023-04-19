@@ -14,23 +14,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
+      <main className={"flex flex-col justify-between items-center p-24 min-h-screen"}>
+        <div className={"flex justify-between items-center text-sm max-w-6xl w-full z-2 font-mono"}>
+          <p
+              className={"m-0 p-4 relative bg-coolGray-100/50 rounded-xl border border-white/30"}
+          >
             Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
+            <code className={"font-bold font-mono"}>src/pages/index.tsx</code>
           </p>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
+              className={"flex justify-center items-center gap-2"}
             >
               By{' '}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
-                className={styles.vercelLogo}
+                className={"invert"}
                 width={100}
                 height={24}
                 priority
