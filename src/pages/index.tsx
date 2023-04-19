@@ -42,15 +42,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.center}>
+        <div className={"relative flex justify-center items-center py-24"}>
           <Image
-            className={"relative invert"}
+            className={"z-20 relative invert"}
             src="/next.svg"
             alt="Next.js Logo"
             width={180}
             height={37}
             priority
           />
+  <div className="absolute w-60 h-60 z-0 ml-44 blur-3xl rotate-45 bg-gradient-to-tl from-transparent via-blue-900 to-transparent"></div>
         </div>
 
         <div className={"grid grid-cols-4 w-screen max-w-full"}>
